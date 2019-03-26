@@ -48,4 +48,10 @@
         <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
         <antcall target="build"/>
     </target>
+                    <target name="testbaidu">
+        <java classname="baidu.testbaidu" failonerror="true" fork="yes">
+            <classpath refid="baidu.classpath"/>
+        </java>
+    </target>
 </project>
+
